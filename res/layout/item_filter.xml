@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/lay_ok_filter"
+        android:layout_width="match_parent"
+        android:layout_height="56dip"
+        android:layout_marginBottom="1dip"
+        android:layout_marginTop="1dip"
+        android:background="@drawable/shape"
+        android:gravity="right|center"
+        android:orientation="horizontal" android:layout_marginLeft="2dip" android:layout_marginRight="2dip">
+
+        <com.futuredeveloper.android.shopfinder.customcontrol.NewControlTextView
+            android:id="@+id/txt_name_filter"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginRight="8dip"
+            android:gravity="right|center"
+            android:text="---"
+            android:textColor="#4183A5" />
+
+        <ImageView
+            android:id="@+id/img_ok_filter"
+            android:layout_width="22dip"
+            android:layout_height="32dip"
+            android:layout_margin="8dip"
+            android:src="@drawable/product_filter"
+            android:visibility="visible" />
+
+    </LinearLayout>
+
+</LinearLayout>

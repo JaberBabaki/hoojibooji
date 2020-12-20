@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" android:gravity="center">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" android:gravity="center" android:background="#ffffff">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <com.futuredeveloper.android.shopfinder.customcontrol.NewControlTextView
+                android:id="@+id/txt_header_ostan"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dip"
+                android:layout_marginRight="4dip"
+                android:gravity="center"
+                android:text="تعیین شهر و استان"
+                android:textColor="#000000"
+                android:textSize="14dip" android:layout_marginTop="8dip"/>
+
+            <ImageView
+                android:id="@+id/ImageView1"
+                android:layout_width="fill_parent"
+                android:layout_height="2dip"
+                android:src="#DB0A5B"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" android:layout_margin="8dip">
+
+            <Button android:id="@+id/edt_ostan"
+                android:layout_width="0dip"
+                android:layout_height="48dip"
+                android:ems="10" android:layout_weight="0.5" android:textSize="14dip" android:hint="مازندران" android:gravity="right|center">
+
+                <requestFocus />
+            </Button>
+
+            <com.futuredeveloper.android.shopfinder.customcontrol.NewControlTextView
+                android:id="@+id/NewControlTextView02"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="استان :"
+                android:textColor="#000000"
+                android:textSize="14dip" android:layout_weight="0.2"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:layout_marginBottom="8dip" android:layout_marginLeft="8dip" android:layout_marginRight="8dip">
+
+            <Button android:id="@+id/edt_shar"
+                android:layout_width="0dip"
+                android:layout_height="48dip"
+                android:ems="10" android:layout_weight="0.5" android:textSize="14dip" android:hint="ساری" android:gravity="right|center"/>
+
+            <com.futuredeveloper.android.shopfinder.customcontrol.NewControlTextView
+                android:id="@+id/NewControlTextView01"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="شهرستان :"
+                android:textColor="#000000"
+                android:textSize="14dip" android:layout_weight="0.2"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" android:gravity="center" android:layout_margin="2dip">
+
+            <Button
+                android:id="@+id/btn_ostan"
+                android:layout_width="fill_parent"
+                android:layout_height="48dip"
+                android:background="@drawable/button_send_corner_dialog"
+                android:text="اعمال تغییرات" android:textColor="#ffffff" android:textSize="14dip"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

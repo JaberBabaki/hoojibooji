@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" android:background="#eeeeee" android:gravity="center">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dip"
+                android:orientation="vertical" android:layout_weight="0.33" android:gravity="center">
+
+                <ImageView
+                    android:id="@+id/imageView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/war2" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dip"
+                android:orientation="vertical" android:layout_weight="0.33">
+
+                <com.futuredeveloper.android.shopfinder.customcontrol.NewControlTextViewYekan
+                    android:id="@+id/newControlTextViewYekan2"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:text="مشکل در دسترسی به اینترنت" android:gravity="center" android:textColor="#000000" android:textSize="20dip"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dip"
+                android:orientation="horizontal" android:layout_weight="0.33">
+
+                <LinearLayout
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" android:layout_weight="0.33" android:gravity="center">
+
+                    <ImageView
+                        android:id="@+id/imageView1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/refresh" android:layout_weight="0.8"/>
+
+                    <com.futuredeveloper.android.shopfinder.customcontrol.NewControlTextViewYekan
+                        android:id="@+id/newControlTextViewYekan1"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="تلاش مجدد" android:gravity="center" android:textColor="#000000"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" android:layout_weight="0.33" android:gravity="center">
+
+                    <ImageView
+                        android:id="@+id/ImageView01"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/wireless" android:layout_weight="0.8"/>
+
+                    <com.futuredeveloper.android.shopfinder.customcontrol.NewControlTextViewYekan
+                        android:id="@+id/NewControlTextViewYekan02"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="شبکه موبایل" android:gravity="center" android:textColor="#000000"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" android:layout_weight="0.33" android:gravity="center">
+
+                    <ImageView
+                        android:id="@+id/ImageView02"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/wifi" android:layout_weight="0.8"/>
+
+                    <com.futuredeveloper.android.shopfinder.customcontrol.NewControlTextViewYekan
+                        android:id="@+id/NewControlTextViewYekan01"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="شبکه وای فای" android:gravity="center" android:textColor="#000000"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

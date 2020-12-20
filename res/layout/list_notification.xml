@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#E5E5E5"
+    android:descendantFocusability="beforeDescendants"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="58dip"
+        android:background="#EA4C87"
+        android:gravity="center">
+
+        <LinearLayout
+            android:layout_width="0dip"
+            android:layout_height="match_parent" android:layout_weight="0.5" android:gravity="left|center">
+
+            <ImageView
+                android:id="@+id/img_search"
+                android:layout_width="22dip"
+                android:layout_height="22dip"
+                android:layout_marginLeft="16dip"
+                android:layout_marginRight="20dip"
+                android:src="@drawable/magnifying" android:visibility="gone"/>
+
+            <ImageView
+                android:id="@+id/img_home"
+                android:layout_width="20dip"
+                android:layout_height="fill_parent"
+                android:layout_marginRight="20dip"
+                android:scaleType="centerInside"
+                android:src="@drawable/main_page" android:layout_marginLeft="16dip"/>
+
+            <ImageView
+                android:id="@+id/img_notific_header"
+                android:layout_width="20dip"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="16dip"
+                android:layout_marginRight="20dip"
+                android:scaleType="centerInside"
+                android:src="@drawable/notification" android:visibility="gone"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="0.3"
+            android:gravity="right|center" >
+
+            <com.futuredeveloper.android.shopfinder.customcontrol.NewControlTextView
+                android:id="@+id/NewControlTextView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="هوجی بوجی"
+                android:textColor="#ffffff"
+                android:textSize="15dip"
+                android:visibility="visible" />
+
+            <ImageView
+                android:id="@+id/men"
+                android:layout_width="48dip"
+                android:layout_height="27dip"
+                android:src="@drawable/menu" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/lst_notification"
+        android:layout_width="fill_parent"
+        android:layout_height="0dip"
+        android:layout_margin="6dip"
+        android:layout_weight="0.5"
+        android:cacheColorHint="@null"
+        android:clickable="false"
+        android:clipChildren="false"
+        android:clipToPadding="false"
+        android:divider="@null"
+        android:dividerHeight="0dip"
+        android:drawable="@android:color/transparent"
+        android:duplicateParentState="true"
+        android:focusable="false" >
+
+        <!-- Preview: listitem=@layout/item_notific -->
+    </ListView>
+
+</LinearLayout>

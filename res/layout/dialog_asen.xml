@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" android:gravity="center" android:layout_gravity="center">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_gravity="center"
+        android:background="@drawable/shape"
+        android:gravity="center_vertical|center_horizontal"
+        android:orientation="vertical" android:layout_marginBottom="160dip" android:layout_marginTop="160dip" android:layout_marginLeft="25dip" android:layout_marginRight="25dip">
+
+        <com.futuredeveloper.android.shopfinder.customcontrol.NewControlTextView
+            android:id="@+id/txt_message_conected"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dip"
+            android:gravity="center"
+            android:text="ترتیب به صورت"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textSize="16dip" android:singleLine="false" android:textColor="#000000"/>
+
+        <LinearLayout
+            android:id="@+id/lay_menu_search"
+            android:layout_width="266dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.86"
+            android:gravity="right|center"
+            android:orientation="vertical"
+            android:visibility="visible" >
+
+            <LinearLayout
+                android:id="@+id/lay_ase"
+                android:layout_width="fill_parent"
+                android:layout_height="0dip"
+                android:layout_weight="0.33"
+                android:gravity="right|center" >
+
+                <com.futuredeveloper.android.shopfinder.customcontrol.NewControlTextView
+                    android:id="@+id/txt_ase"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="10dip"
+                    android:gravity="right"
+                    android:text="صعودی"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textColor="#000000"
+                    android:textSize="13dip" />
+
+                <ImageView
+                    android:id="@+id/img_ase"
+                    android:layout_width="22dip"
+                    android:layout_height="32dip"
+                    android:layout_margin="8dip"
+                    android:src="@drawable/ppp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lay_dease"
+                android:layout_width="fill_parent"
+                android:layout_height="0dip"
+                android:layout_weight="0.33"
+                android:gravity="right|center" >
+
+                <com.futuredeveloper.android.shopfinder.customcontrol.NewControlTextView
+                    android:id="@+id/txt_dease"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="10dip"
+                    android:gravity="right"
+                    android:text="نزولی"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textColor="#000000"
+                    android:textSize="13dip" />
+
+                <ImageView
+                    android:id="@+id/img_dease"
+                    android:layout_width="22dip"
+                    android:layout_height="32dip"
+                    android:layout_margin="8dip"
+                    android:src="@drawable/ppp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" android:layout_marginBottom="4dip" android:layout_marginLeft="2dip" android:layout_marginRight="2dip" android:layout_marginTop="2dip">
+
+            <Button
+                android:id="@+id/btn_back"
+                android:layout_width="0dip"
+                android:layout_height="38dip"
+                android:layout_marginRight="2dip"
+                android:layout_weight="0.5"
+                android:background="@drawable/button_send_corner_dialog"
+                android:text="بازگشت"
+                android:textColor="#ffffff"
+                android:visibility="visible" />
+
+            <Button
+                android:id="@+id/btn_ok"
+                android:layout_width="0dip"
+                android:layout_height="38dip"
+                android:layout_marginRight="2dip"
+                android:layout_weight="0.5"
+                android:background="@drawable/button_send_corner_dialog"
+                android:text="تایید"
+                android:textColor="#ffffff"
+                android:visibility="visible" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

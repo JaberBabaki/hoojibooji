@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" android:gravity="center" android:layout_gravity="center">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_gravity="center"
+        android:background="@drawable/shape_dialog"
+        android:gravity="center_vertical|center_horizontal"
+        android:orientation="vertical" android:layout_marginBottom="190dip" android:layout_marginTop="190dip" android:layout_marginRight="10dip" android:layout_marginLeft="10dip">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="60dip"
+            android:layout_margin="3dip"
+            android:gravity="center_vertical|center_horizontal" >
+
+            <com.futuredeveloper.android.shopfinder.customcontrol.NewControlTextView
+                android:id="@+id/txt_header_error"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="4dip"
+                android:gravity="center"
+                android:text="برای گزارش باید وارد شوید"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textSize="13dip" android:textColor="#000000"/>
+
+        </LinearLayout>
+
+        <com.futuredeveloper.android.shopfinder.customcontrol.NewControlTextView
+            android:id="@+id/txt_name_error"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dip"
+            android:gravity="right"
+            android:text="مخاطب به کانتکت ها اضافه شود"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textSize="13dip" android:visibility="gone" android:textColor="#000000"/>
+
+        <com.futuredeveloper.android.shopfinder.customcontrol.NewControlTextView
+            android:id="@+id/txt_family_eror"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dip"
+            android:gravity="right"
+            android:text="مخاطب به کانتکت ها اضافه شود"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textSize="13dip" android:visibility="gone" android:textColor="#000000"/>
+
+        <com.futuredeveloper.android.shopfinder.customcontrol.NewControlTextView
+            android:id="@+id/txt_address_error"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dip"
+            android:gravity="right"
+            android:text="مخاطب به کانتکت ها اضافه شود"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textSize="13dip" android:visibility="gone" android:textColor="#000000"/>
+
+        <com.futuredeveloper.android.shopfinder.customcontrol.NewControlTextView
+            android:id="@+id/txt_change_error"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="8dip"
+            android:gravity="right"
+            android:text="مخاطب به کانتکت ها اضافه شود"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textSize="13dip" android:visibility="gone" android:textColor="#000000"/>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" android:layout_marginBottom="2dip" android:layout_marginTop="2dip" android:layout_marginLeft="2dip" android:layout_marginRight="2dip" android:gravity="bottom|center">
+
+            <Button
+                android:id="@+id/btn_no_login_go_back"
+                android:layout_width="0dip"
+                android:layout_height="48dip"
+                android:layout_marginLeft="2dip"
+                android:layout_weight="1"
+                android:background="@drawable/button_send_corner_dialog"
+                android:text="موافقم"
+                android:textColor="#ffffff"
+                android:textSize="13dip" />
+
+            <Button
+                android:id="@+id/btn_no_login_go_login"
+                android:layout_width="0dip"
+                android:layout_height="48dip"
+                android:layout_marginLeft="2dip"
+                android:layout_weight="1"
+                android:background="@drawable/button_send_corner_dialog"
+                android:text="ورود"
+                android:textColor="#ffffff"
+                android:textSize="13dip" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

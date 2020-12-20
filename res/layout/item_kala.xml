@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/lay_main_item_product"
+        android:layout_width="match_parent"
+        android:layout_height="120dip"
+        android:layout_marginBottom="2dip"
+        android:layout_marginTop="2dip"
+        android:background="@drawable/shape"
+        android:gravity="right"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="0.6"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dip"
+                android:layout_marginLeft="4dip"
+                android:layout_marginRight="4dip"
+                android:layout_weight="0.5"
+                android:gravity="right|center" >
+
+                <LinearLayout
+                    android:layout_width="0dip"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="0.5"
+                    android:gravity="center" android:visibility="gone">
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="4dip"
+                        android:layout_marginLeft="4dip"
+                        android:layout_marginRight="2dip"
+                        android:layout_marginTop="4dip"
+                        android:gravity="center"
+                        android:orientation="vertical" >
+
+                        <com.futuredeveloper.android.shopfinder.customcontrol.NewControlTextView
+                            android:id="@+id/txt_rate"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="4dip"
+                            android:gravity="center"
+                            android:text="4.7"
+                            android:textColor="#291515"
+                            android:textSize="17dip" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dip"
+                    android:layout_height="fill_parent"
+                    android:layout_marginBottom="4dip"
+                    android:layout_marginLeft="2dip"
+                    android:layout_marginRight="4dip"
+                    android:layout_marginTop="4dip"
+                    android:layout_weight="0.5"
+                    android:gravity="center" >
+
+                    <com.futuredeveloper.android.shopfinder.customcontrol.NewControlTextView
+                        android:id="@+id/txt_price_list"
+                        android:layout_width="0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.6"
+                        android:gravity="center"
+                        android:text="---"
+                        android:textColor="#00c853"
+                        android:textSize="11dip" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dip"
+                    android:layout_height="match_parent" android:layout_weight="0.5">
+
+                    <com.futuredeveloper.android.shopfinder.customcontrol.NewControlTextView
+                        android:id="@+id/txt_name_store"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:gravity="right|center"
+                        android:text="---"
+                        android:textColor="#291515" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dip"
+                android:layout_weight="0.2"
+                android:gravity="right">
+
+                <LinearLayout
+                    android:layout_width="0dip"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="4dip"
+                    android:layout_marginLeft="4dip"
+                    android:layout_marginRight="4dip"
+                    android:layout_marginTop="4dip"
+                    android:layout_weight="0.5"
+                    android:background="#F5F5F5"
+                    android:gravity="center" >
+
+                    <com.futuredeveloper.android.shopfinder.customcontrol.NewControlTextView
+                        android:id="@+id/txt_category"
+                        android:layout_width="0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.6"
+                        android:gravity="right"
+                        android:text="---"
+                        android:textColor="#291515"
+                        android:textSize="11dip" />
+
+                    <ImageView
+                        android:id="@+id/ImageView01"
+                        android:layout_width="25dip"
+                        android:layout_height="17dip"
+                        android:layout_marginBottom="2dip"
+                        android:layout_marginLeft="2dip"
+                        android:layout_marginRight="2dip"
+                        android:layout_marginTop="2dip"
+                        android:src="@drawable/cat_gray" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dip"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="4dip"
+                    android:layout_marginLeft="2dip"
+                    android:layout_marginRight="4dip"
+                    android:layout_marginTop="4dip"
+                    android:layout_weight="0.5"
+                    android:background="#F5F5F5"
+                    android:gravity="center" android:visibility="gone">
+
+                    <com.futuredeveloper.android.shopfinder.customcontrol.NewControlTextView
+                        android:id="@+id/txt_location"
+                        android:layout_width="0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.6"
+                        android:gravity="center"
+                        android:text="لوازم دیجیتال"
+                        android:textColor="#291515"
+                        android:textSize="11dip" />
+
+                    <ImageView
+                        android:id="@+id/ImageView02"
+                        android:layout_width="0dip"
+                        android:layout_height="17dip"
+                        android:layout_marginBottom="2dip"
+                        android:layout_marginLeft="2dip"
+                        android:layout_marginRight="2dip"
+                        android:layout_marginTop="2dip"
+                        android:layout_weight="0.2"
+                        android:src="@drawable/location" />
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="0.3" >
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="2dip"
+                android:layout_height="fill_parent"
+                android:layout_marginRight="4dip"
+                android:src="#C4CDE0" android:layout_marginBottom="4dip" android:layout_marginTop="4dip"/>
+
+            <com.android.volley.toolbox.NetworkImageView
+                android:id="@+id/img_store"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dip"
+                android:scaleType="fitXY" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

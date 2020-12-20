@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" android:gravity="center">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="420dip"
+        android:orientation="vertical" android:gravity="top" android:background="#ffffff">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" android:background="#DB0A5B">
+
+            <com.futuredeveloper.android.shopfinder.customcontrol.NewControlTextView
+                android:id="@+id/txt_header_ls"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dip"
+                android:layout_marginRight="4dip"
+                android:layout_marginTop="8dip"
+                android:gravity="center"
+                android:text="انتخاب استان"
+                android:textColor="#ffffff"
+                android:textSize="14dip" />
+
+            <ImageView
+                android:id="@+id/ImageView1"
+                android:layout_width="fill_parent"
+                android:layout_height="2dip"
+                android:src="#DB0A5B"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lay_ls"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dip"
+            android:orientation="vertical">
+
+            <ListView
+                android:id="@+id/lst_st"
+                android:layout_width="220dip"
+                android:layout_height="fill_parent"
+                android:background="#eeeeee"
+                android:cacheColorHint="@null"
+                android:clickable="false"
+                android:clipChildren="false"
+                android:clipToPadding="false"
+                android:divider="@null"
+                android:dividerHeight="0dip"
+                android:drawable="@android:color/transparent"
+                android:duplicateParentState="true"
+                android:focusable="false"
+                android:visibility="visible" >
+
+                <!-- Preview: listitem=@layout/list_ostan -->
+            </ListView>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

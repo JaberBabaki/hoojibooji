@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" android:gravity="center" android:layout_gravity="center">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_gravity="center"
+        android:background="@drawable/shape_dialog"
+        android:gravity="center_vertical|center_horizontal"
+        android:orientation="vertical" android:layout_marginBottom="150dip" android:layout_marginTop="150dip" android:layout_marginLeft="10dip" android:layout_marginRight="10dip">
+
+        <ImageView
+            android:id="@+id/ImageView01"
+            android:layout_width="fill_parent"
+            android:layout_height="2dip"
+            android:layout_marginLeft="8dip"
+            android:layout_marginRight="8dip"
+            android:src="#dcdcdc" />
+
+        <LinearLayout
+            android:id="@+id/lay_menu_search"
+            android:layout_width="266dp"
+            android:layout_height="wrap_content"
+            android:gravity="right|center"
+            android:orientation="vertical"
+            android:visibility="visible" >
+
+            <LinearLayout
+                android:id="@+id/lay_very_good"
+                android:layout_width="fill_parent"
+                android:layout_height="0dip"
+                android:layout_weight="0.33"
+                android:gravity="right|center" >
+
+                <com.futuredeveloper.android.shopfinder.customcontrol.NewControlTextView
+                    android:id="@+id/txt_1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="10dip"
+                    android:gravity="right"
+                    android:text="تصویر نامناسب است"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textColor="#000000"
+                    android:textSize="12dip" />
+
+                <ImageView
+                    android:id="@+id/img_very_goood"
+                    android:layout_width="22dip"
+                    android:layout_height="32dip"
+                    android:layout_margin="2dip"
+                    android:src="@drawable/ppp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lay_good"
+                android:layout_width="fill_parent"
+                android:layout_height="0dip"
+                android:layout_weight="0.33"
+                android:gravity="right|center" >
+
+                <com.futuredeveloper.android.shopfinder.customcontrol.NewControlTextView
+                    android:id="@+id/txt_2"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="10dip"
+                    android:gravity="right"
+                    android:text="توضیحات محصول نامناسب است"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textColor="#000000"
+                    android:textSize="12dip" />
+
+                <ImageView
+                    android:id="@+id/img_goood"
+                    android:layout_width="22dip"
+                    android:layout_height="32dip"
+                    android:src="@drawable/ppp" android:layout_margin="2dip"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lay_not_bad"
+                android:layout_width="match_parent"
+                android:layout_height="0dip"
+                android:layout_weight="0.33"
+                android:gravity="right|center" >
+
+                <com.futuredeveloper.android.shopfinder.customcontrol.NewControlTextView
+                    android:id="@+id/txt_3"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dip"
+                    android:gravity="right"
+                    android:singleLine="false"
+                    android:text="محصول در دسته بندی نامناسب قرار گرفته "
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textColor="#000000"
+                    android:textSize="12dip" />
+
+                <ImageView
+                    android:id="@+id/img_not_bad"
+                    android:layout_width="22dip"
+                    android:layout_height="32dip"
+                    android:layout_margin="2dip"
+                    android:src="@drawable/ppp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lay_weak"
+                android:layout_width="match_parent"
+                android:layout_height="0dip"
+                android:layout_weight="0.33"
+                android:gravity="right|center" >
+
+                <com.futuredeveloper.android.shopfinder.customcontrol.NewControlTextView
+                    android:id="@+id/txt_4"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dip"
+                    android:gravity="right"
+                    android:text="موارد دیگر"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textColor="#000000"
+                    android:textSize="12dip" />
+
+                <ImageView
+                    android:id="@+id/img_weak"
+                    android:layout_width="22dip"
+                    android:layout_height="32dip"
+                    android:layout_margin="2dip"
+                    android:src="@drawable/ppp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" android:gravity="bottom|center" android:layout_marginBottom="2dip" android:layout_marginTop="2dip" android:layout_marginLeft="2dip" android:layout_marginRight="2dip">
+
+            <Button
+                android:id="@+id/btn_exit"
+                android:layout_width="0dip"
+                android:layout_height="38dip"
+                android:layout_weight="0.5"
+                android:background="@drawable/button_send_corner_dialog"
+                android:text="بازگشت"
+                android:textColor="#ffffff"
+                android:visibility="visible" android:layout_marginRight="2dip" android:textSize="13dip"/>
+
+            <Button
+                android:id="@+id/btn_send"
+                android:layout_width="0dip"
+                android:layout_height="38dip"
+                android:layout_weight="0.5"
+                android:background="@drawable/button_send_corner_dialog"
+                android:text="ارسال"
+                android:textColor="#ffffff"
+                android:visibility="visible" android:layout_marginLeft="2dip" android:textSize="13dip"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

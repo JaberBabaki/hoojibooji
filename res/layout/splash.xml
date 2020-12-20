@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:background="#eeeeee"
+    android:orientation="horizontal" android:gravity="center">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="vertical" android:gravity="center">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0dip"
+            android:orientation="vertical" android:layout_weight="0.5" android:gravity="center" android:layout_marginTop="50dip">
+
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="210dip"
+                android:layout_height="210dip"
+                android:src="@drawable/logo" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dip"
+            android:orientation="horizontal" android:layout_weight="0.5" android:gravity="center" android:layout_marginBottom="50dip">
+
+            <com.futuredeveloper.android.shopfinder.customcontrol.NewControlTextView
+                android:id="@+id/NewControlTextView1"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:text="هوجی بوجی نقطه اتصال فروشنده و مشتری" android:textColor="#28348A" android:textSize="14dip" android:gravity="center" android:singleLine="false"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

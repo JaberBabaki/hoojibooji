@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" android:gravity="center" android:descendantFocusability="beforeDescendants" android:focusableInTouchMode="true">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" android:gravity="center" android:background="@drawable/shape" android:layout_marginBottom="80dip" android:layout_marginTop="80dip" android:layout_marginLeft="10dip" android:layout_marginRight="10dip">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <com.futuredeveloper.android.shopfinder.customcontrol.NewControlTextView
+                android:id="@+id/txt_header_ostan"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="2dip"
+                android:layout_marginRight="4dip"
+                android:gravity="center"
+                android:text="ورود و ثبت نام"
+                android:textColor="#000000"
+                android:textSize="15dip" android:layout_marginTop="8dip"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" android:layout_marginBottom="2dip" android:layout_marginLeft="8dip" android:layout_marginRight="8dip" android:layout_marginTop="16dip">
+
+            <EditText
+                android:id="@+id/edt_username_dialog_login"
+                android:layout_width="match_parent"
+                android:layout_height="48dip"
+                android:layout_weight="1"
+                android:background="@drawable/button_send_corner_dialog_box"
+                android:drawableLeft="@drawable/people"
+                android:ems="10"
+                android:gravity="right"
+                android:hint="نام کاربری"
+                android:imeOptions="actionNext"
+                android:inputType="text"
+                android:singleLine="true"
+                android:textSize="14dip" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="2dip"
+            android:layout_marginLeft="8dip"
+            android:layout_marginRight="8dip" android:descendantFocusability="beforeDescendants" android:focusable="true" android:focusableInTouchMode="true" android:layout_marginTop="8dip">
+
+            <EditText
+                android:id="@+id/edt_pas_dialog_login"
+                android:layout_width="match_parent"
+                android:layout_height="48dip"
+                android:layout_weight="1"
+                android:background="@drawable/button_send_corner_dialog_box"
+                android:drawableLeft="@drawable/pas"
+                android:ems="10"
+                android:gravity="right"
+                android:hint="رمز عبور"
+                android:imeOptions="actionNext"
+                android:inputType="text"
+                android:singleLine="true"
+                android:textSize="14dip" android:password="true">
+
+                <requestFocus />
+            </EditText>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lay_confim_pas_dialog_login"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="2dip"
+            android:layout_marginLeft="8dip"
+            android:layout_marginRight="8dip" android:visibility="gone" android:layout_marginTop="8dip">
+
+            <EditText
+                android:id="@+id/edt_confim_pas_dialog_login"
+                android:layout_width="match_parent"
+                android:layout_height="38dip"
+                android:background="@drawable/button_send_corner_dialog_box"
+                android:drawableLeft="@drawable/pas"
+                android:ems="10"
+                android:gravity="right"
+                android:hint="تکرار رمز عبور"
+                android:imeOptions="actionDone"
+                android:inputType="text"
+                android:password="true"
+                android:singleLine="true"
+                android:textSize="14dip" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="2dip"
+            android:layout_marginLeft="2dip"
+            android:layout_marginRight="2dip"
+            android:orientation="vertical" android:layout_marginTop="16dip">
+
+            <LinearLayout
+                android:id="@+id/lay_forgot_dialog_login"
+                android:layout_width="fill_parent"
+                android:layout_height="40dip"
+                android:layout_marginBottom="4dip"
+                android:layout_marginLeft="4dip"
+                android:layout_marginRight="4dip"
+                android:layout_marginTop="4dip"
+                android:background="@drawable/button_send_corner_dialog_box"
+                android:gravity="center" >
+
+                <com.futuredeveloper.android.shopfinder.customcontrol.NewControlTextView
+                    android:id="@+id/txt_price_tiles"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="right|center"
+                    android:text="* رمز عبور یادم نیست"
+                    android:textColor="#00c853"
+                    android:textSize="11dip" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lay_register_dialog_login"
+                android:layout_width="fill_parent"
+                android:layout_height="40dip"
+                android:layout_marginBottom="4dip"
+                android:layout_marginLeft="4dip"
+                android:layout_marginRight="4dip"
+                android:layout_marginTop="4dip"
+                android:background="@drawable/button_send_corner_dialog_box"
+                android:gravity="center" >
+
+                <com.futuredeveloper.android.shopfinder.customcontrol.NewControlTextView
+                    android:id="@+id/txt_register_dialog_login"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="right|center"
+                    android:text=" * عضویت در هوجی بوجی"
+                    android:textColor="#00c853"
+                    android:textSize="11dip" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lay_login_dialog_login"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="bottom|center" android:layout_marginTop="16dip" android:layout_marginBottom="5dip" android:layout_marginLeft="5dip" android:layout_marginRight="5dip">
+
+            <Button
+                android:id="@+id/btn_login_and_register_back"
+                android:layout_width="0dp"
+                android:layout_height="38dip"
+                android:layout_marginRight="4dip"
+                android:layout_weight="0.5"
+                android:background="@drawable/button_send_corner_dialog"
+                android:text="بازگشت"
+                android:textColor="#ffffff"
+                android:textSize="13dip" />
+
+            <Button
+                android:id="@+id/btn_login_dialog_login"
+                android:layout_width="0dip"
+                android:layout_height="38dip"
+                android:layout_weight="0.5"
+                android:background="@drawable/button_send_corner_dialog"
+                android:text="ورود"
+                android:textColor="#ffffff"
+                android:textSize="13dip" android:layout_marginLeft="4dip"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

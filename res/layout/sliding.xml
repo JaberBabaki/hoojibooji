@@ -1,0 +1,681 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/LinearLayout1"
+    android:layout_width="280dip"
+    android:layout_height="fill_parent"
+    android:layout_gravity="right"
+    android:background="#272727"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/LinearLayout01"
+        android:layout_width="match_parent"
+        android:layout_height="200dip"
+        android:layout_marginBottom="2dip"
+        android:background="#272727"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/LinearLayout06"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:layout_margin="8dip"
+            android:gravity="right|center"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="0dip"
+                android:layout_weight="0.5"
+                android:orientation="horizontal" >
+
+                <com.futuredeveloper.android.shopfinder.customcontrol.NewControlTextView
+                    android:id="@+id/txt_usename_sliding"
+                    android:layout_width="0dip"
+                    android:layout_height="fill_parent"
+                    android:layout_marginLeft="14dip"
+                    android:layout_weight="0.6"
+                    android:gravity="center"
+                    android:text="هوجی بوجی"
+                    android:textColor="#ffffff"
+                    android:textSize="14dip" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/shape_pic"
+                    android:gravity="center"
+                    android:orientation="vertical" >
+
+                    <com.futuredeveloper.android.shopfinder.customcontrol.RoundedCornerImageView
+                        android:id="@+id/roundedCornerImageView1"
+                        android:layout_width="68dip"
+                        android:layout_height="68dip"
+                        android:layout_marginTop="2dip"
+                        android:src="@drawable/user_white" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <com.futuredeveloper.android.shopfinder.customcontrol.NewControlTextView
+                android:id="@+id/NewControlTextView08"
+                android:layout_width="fill_parent"
+                android:layout_height="0dip"
+                android:layout_marginLeft="14dip"
+                android:layout_weight="0.5"
+                android:gravity="center"
+                android:text="نقطه اتصال فروشنده و مشتری ..."
+                android:textColor="#ffffff"
+                android:textSize="14dip" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" android:background="#272727" android:fillViewport="false">
+
+        <LinearLayout
+            android:id="@+id/lay_all_sliding"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:orientation="vertical" android:background="#272727">
+
+            <LinearLayout
+                android:id="@+id/lay_ostan"
+                android:layout_width="fill_parent"
+                android:layout_height="50dip"
+                android:layout_marginBottom="2dip"
+                android:background="#353535"
+                android:gravity="center"
+                android:orientation="vertical" android:visibility="gone">
+
+                <LinearLayout
+                    android:id="@+id/lin"
+                    android:layout_width="match_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_margin="8dip"
+                    android:gravity="right|center"
+                    android:orientation="horizontal" >
+
+                    <com.futuredeveloper.android.shopfinder.customcontrol.NewControlTextView
+                        android:id="@+id/NewControlTextView1"
+                        android:layout_width="0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="14dip"
+                        android:layout_weight="0.6"
+                        android:gravity="center"
+                        android:text="مازنداران / ساری"
+                        android:textColor="#bdbdbd"
+                        android:textSize="14dip" />
+
+                    <ImageView
+                        android:id="@+id/ImageView03"
+                        android:layout_width="0dip"
+                        android:layout_height="30dip"
+                        android:layout_weight="0.2"
+                        android:src="@drawable/location" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lay_login"
+                android:layout_width="match_parent"
+                android:layout_height="50dip"
+                android:layout_marginBottom="2dip"
+                android:background="#353535"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:id="@+id/LinearLayout11"
+                    android:layout_width="match_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_margin="8dip"
+                    android:gravity="right|center"
+                    android:orientation="horizontal" >
+
+                    <com.futuredeveloper.android.shopfinder.customcontrol.NewControlTextView
+                        android:id="@+id/txt_login_register_sliding"
+                        android:layout_width="0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="14dip"
+                        android:layout_weight="0.6"
+                        android:gravity="center"
+                        android:text="ورود و ثبت نام"
+                        android:textColor="#bdbdbd"
+                        android:textSize="14dip" />
+
+                    <ImageView
+                        android:id="@+id/ImageView07"
+                        android:layout_width="0dip"
+                        android:layout_height="30dip"
+                        android:layout_weight="0.2"
+                        android:src="@drawable/login_and_register" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lay_panel_mangment"
+                android:layout_width="match_parent"
+                android:layout_height="50dip"
+                android:layout_marginBottom="2dip"
+                android:background="#353535"
+                android:gravity="center"
+                android:orientation="vertical" android:visibility="gone">
+
+                <LinearLayout
+                    android:id="@+id/LinearLayout10"
+                    android:layout_width="match_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_margin="8dip"
+                    android:gravity="right|center"
+                    android:orientation="horizontal" >
+
+                    <com.futuredeveloper.android.shopfinder.customcontrol.NewControlTextView
+                        android:id="@+id/NewControlTextView06"
+                        android:layout_width="0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="14dip"
+                        android:layout_weight="0.6"
+                        android:gravity="center"
+                        android:text="پنل مدیریت"
+                        android:textColor="#bdbdbd"
+                        android:textSize="14dip"/>
+
+                    <ImageView
+                        android:id="@+id/ImageView15"
+                        android:layout_width="0dip"
+                        android:layout_height="30dip"
+                        android:layout_weight="0.2"
+                        android:src="@drawable/mange" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lay_advance_search"
+                android:layout_width="match_parent"
+                android:layout_height="50dip"
+                android:layout_marginBottom="2dip"
+                android:background="#353535"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:id="@+id/LinearLayout13"
+                    android:layout_width="match_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_margin="8dip"
+                    android:gravity="right|center"
+                    android:orientation="horizontal" >
+
+                    <com.futuredeveloper.android.shopfinder.customcontrol.NewControlTextView
+                        android:id="@+id/NewControlTextView07"
+                        android:layout_width="0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="14dip"
+                        android:layout_weight="0.6"
+                        android:gravity="center"
+                        android:text="جستجوی پسشرفته"
+                        android:textColor="#bdbdbd"
+                        android:textSize="14dip" />
+
+                    <ImageView
+                        android:id="@+id/ImageView08"
+                        android:layout_width="0dip"
+                        android:layout_height="30dip"
+                        android:layout_weight="0.2"
+                        android:src="@drawable/magnifying_advance" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/LinearLayout19"
+                android:layout_width="match_parent"
+                android:layout_height="50dip"
+                android:layout_marginBottom="2dip"
+                android:background="#353535"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:id="@+id/LinearLayout18"
+                    android:layout_width="match_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_margin="8dip"
+                    android:gravity="right|center"
+                    android:orientation="horizontal" >
+
+                    <com.futuredeveloper.android.shopfinder.customcontrol.NewControlTextView
+                        android:id="@+id/NewControlTextView03"
+                        android:layout_width="0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="14dip"
+                        android:layout_weight="0.6"
+                        android:gravity="center"
+                        android:text="صفحه اصلی"
+                        android:textColor="#bdbdbd"
+                        android:textSize="14dip" />
+
+                    <ImageView
+                        android:id="@+id/ImageView05"
+                        android:layout_width="0dip"
+                        android:layout_height="30dip"
+                        android:layout_weight="0.2"
+                        android:src="@drawable/security54" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lay_login"
+                android:layout_width="match_parent"
+                android:layout_height="50dip"
+                android:layout_marginBottom="2dip"
+                android:background="#272727"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:id="@+id/LinearLayout02"
+                    android:layout_width="match_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_margin="8dip"
+                    android:gravity="right|center"
+                    android:orientation="horizontal" >
+
+                    <com.futuredeveloper.android.shopfinder.customcontrol.NewControlTextView
+                        android:id="@+id/NewControlTextView01"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="14dip"
+                        android:text="دسته بندی"
+                        android:textColor="#bdbdbd"
+                        android:textSize="14dip" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lay_digital"
+                android:layout_width="match_parent"
+                android:layout_height="50dip"
+                android:layout_marginBottom="2dip"
+                android:background="#353535"
+                android:gravity="center"
+                android:orientation="vertical" android:visibility="visible">
+
+                <LinearLayout
+                    android:id="@+id/LinearLayout15"
+                    android:layout_width="match_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_margin="8dip"
+                    android:gravity="right|center"
+                    android:orientation="horizontal" >
+
+                    <com.futuredeveloper.android.shopfinder.customcontrol.NewControlTextView
+                        android:id="@+id/NewControlTextView09"
+                        android:layout_width="0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="14dip"
+                        android:layout_weight="0.6"
+                        android:gravity="center"
+                        android:text="دیجیتال"
+                        android:textColor="#bdbdbd"
+                        android:textSize="14dip" />
+
+                    <ImageView
+                        android:id="@+id/ImageView01"
+                        android:layout_width="0dip"
+                        android:layout_height="30dip"
+                        android:layout_weight="0.2"
+                        android:src="@drawable/digital" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lay_beau"
+                android:layout_width="match_parent"
+                android:layout_height="50dip"
+                android:layout_marginBottom="2dip"
+                android:background="#353535"
+                android:gravity="center"
+                android:orientation="vertical" android:visibility="visible">
+
+                <LinearLayout
+                    android:id="@+id/LinearLayout04"
+                    android:layout_width="match_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_margin="8dip"
+                    android:gravity="right|center"
+                    android:orientation="horizontal" >
+
+                    <com.futuredeveloper.android.shopfinder.customcontrol.NewControlTextView
+                        android:id="@+id/NewControlTextView02"
+                        android:layout_width="0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="14dip"
+                        android:layout_weight="0.6"
+                        android:gravity="center"
+                        android:text="زیبایی"
+                        android:textColor="#bdbdbd"
+                        android:textSize="14dip" />
+
+                    <ImageView
+                        android:id="@+id/ImageView02"
+                        android:layout_width="0dip"
+                        android:layout_height="30dip"
+                        android:layout_weight="0.2"
+                        android:src="@drawable/cosmetic" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lay_clo"
+                android:layout_width="match_parent"
+                android:layout_height="50dip"
+                android:layout_marginBottom="2dip"
+                android:background="#353535"
+                android:gravity="center"
+                android:orientation="vertical" android:visibility="visible">
+
+                <LinearLayout
+                    android:id="@+id/LinearLayout17"
+                    android:layout_width="match_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_margin="8dip"
+                    android:gravity="right|center"
+                    android:orientation="horizontal" >
+
+                    <com.futuredeveloper.android.shopfinder.customcontrol.NewControlTextView
+                        android:id="@+id/NewControlTextView10"
+                        android:layout_width="0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="14dip"
+                        android:layout_weight="0.6"
+                        android:gravity="center"
+                        android:text="پوشاک"
+                        android:textColor="#bdbdbd"
+                        android:textSize="14dip" />
+
+                    <ImageView
+                        android:id="@+id/ImageView09"
+                        android:layout_width="0dip"
+                        android:layout_height="30dip"
+                        android:layout_weight="0.2"
+                        android:src="@drawable/cloth" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lay_another"
+                android:layout_width="match_parent"
+                android:layout_height="50dip"
+                android:layout_marginBottom="2dip"
+                android:background="#353535"
+                android:gravity="center"
+                android:orientation="vertical" android:visibility="visible">
+
+                <LinearLayout
+                    android:id="@+id/LinearLayout12"
+                    android:layout_width="match_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_margin="8dip"
+                    android:gravity="right|center"
+                    android:orientation="horizontal" >
+
+                    <com.futuredeveloper.android.shopfinder.customcontrol.NewControlTextView
+                        android:id="@+id/NewControlTextView11"
+                        android:layout_width="0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="14dip"
+                        android:layout_weight="0.6"
+                        android:gravity="center"
+                        android:text="سایر"
+                        android:textColor="#bdbdbd"
+                        android:textSize="14dip" />
+
+                    <ImageView
+                        android:id="@+id/ImageView10"
+                        android:layout_width="0dip"
+                        android:layout_height="30dip"
+                        android:layout_weight="0.2"
+                        android:src="@drawable/cloth" android:visibility="invisible"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/LinearLayout05"
+                android:layout_width="match_parent"
+                android:layout_height="50dip"
+                android:layout_marginBottom="2dip"
+                android:background="#272727"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:id="@+id/LinearLayout07"
+                    android:layout_width="match_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_margin="8dip"
+                    android:gravity="right|center"
+                    android:orientation="horizontal" >
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lay_contact_us"
+                android:layout_width="match_parent"
+                android:layout_height="50dip"
+                android:layout_marginBottom="2dip"
+                android:background="#353535"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:id="@+id/LinearLayout08"
+                    android:layout_width="match_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_margin="8dip"
+                    android:gravity="right|center"
+                    android:orientation="horizontal" >
+
+                    <com.futuredeveloper.android.shopfinder.customcontrol.NewControlTextView
+                        android:id="@+id/NewControlTextView04"
+                        android:layout_width="0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="14dip"
+                        android:layout_weight="0.6"
+                        android:gravity="center"
+                        android:text="تماس با ما"
+                        android:textColor="#bdbdbd"
+                        android:textSize="14dip" />
+
+                    <ImageView
+                        android:id="@+id/ImageView04"
+                        android:layout_width="0dip"
+                        android:layout_height="30dip"
+                        android:layout_weight="0.2"
+                        android:src="@drawable/mail" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/LinearLayout21"
+                android:layout_width="match_parent"
+                android:layout_height="50dip"
+                android:layout_marginBottom="2dip"
+                android:background="#353535"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:id="@+id/LinearLayout20"
+                    android:layout_width="match_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_margin="8dip"
+                    android:gravity="right|center"
+                    android:orientation="horizontal" >
+
+                    <com.futuredeveloper.android.shopfinder.customcontrol.NewControlTextView
+                        android:id="@+id/NewControlTextView05"
+                        android:layout_width="0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="14dip"
+                        android:layout_weight="0.6"
+                        android:gravity="center"
+                        android:text="قوانین"
+                        android:textColor="#bdbdbd"
+                        android:textSize="14dip" />
+
+                    <ImageView
+                        android:id="@+id/ImageView06"
+                        android:layout_width="0dip"
+                        android:layout_height="30dip"
+                        android:layout_weight="0.2"
+                        android:src="@drawable/court" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/LinearLayout23"
+                android:layout_width="match_parent"
+                android:layout_height="50dip"
+                android:layout_marginBottom="2dip"
+                android:background="#353535"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:id="@+id/LinearLayout22"
+                    android:layout_width="match_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_margin="8dip"
+                    android:gravity="right|center"
+                    android:orientation="horizontal" >
+
+                    <com.futuredeveloper.android.shopfinder.customcontrol.NewControlTextView
+                        android:id="@+id/NewControlTextView12"
+                        android:layout_width="0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="14dip"
+                        android:layout_weight="0.6"
+                        android:gravity="center"
+                        android:text="درباره هوجی بوجی"
+                        android:textColor="#bdbdbd"
+                        android:textSize="14dip" />
+
+                    <ImageView
+                        android:id="@+id/ImageView11"
+                        android:layout_width="0dip"
+                        android:layout_height="30dip"
+                        android:layout_weight="0.2"
+                        android:src="@drawable/info" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/LinearLayout24"
+                android:layout_width="match_parent"
+                android:layout_height="50dip"
+                android:layout_marginBottom="2dip"
+                android:background="#353535"
+                android:gravity="center"
+                android:orientation="vertical" android:visibility="gone">
+
+                <LinearLayout
+                    android:id="@+id/LinearLayout25"
+                    android:layout_width="match_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_margin="8dip"
+                    android:gravity="right|center"
+                    android:orientation="horizontal" >
+
+                    <com.futuredeveloper.android.shopfinder.customcontrol.NewControlTextView
+                        android:id="@+id/NewControlTextView13"
+                        android:layout_width="0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="14dip"
+                        android:layout_weight="0.6"
+                        android:gravity="center"
+                        android:text="امتیاز دهید"
+                        android:textColor="#bdbdbd"
+                        android:textSize="14dip" />
+
+                    <ImageView
+                        android:id="@+id/ImageView12"
+                        android:layout_width="0dip"
+                        android:layout_height="30dip"
+                        android:layout_weight="0.2"
+                        android:src="@drawable/stars" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/LinearLayout27"
+                android:layout_width="match_parent"
+                android:layout_height="50dip"
+                android:layout_marginBottom="2dip"
+                android:background="#353535"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:id="@+id/LinearLayout26"
+                    android:layout_width="match_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_margin="8dip"
+                    android:gravity="right|center"
+                    android:orientation="horizontal" >
+
+                    <com.futuredeveloper.android.shopfinder.customcontrol.NewControlTextView
+                        android:id="@+id/NewControlTextView15"
+                        android:layout_width="0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="14dip"
+                        android:layout_weight="0.6"
+                        android:gravity="center"
+                        android:text="معرفی به دوستان"
+                        android:textColor="#bdbdbd"
+                        android:textSize="14dip" />
+
+                    <ImageView
+                        android:id="@+id/ImageView13"
+                        android:layout_width="0dip"
+                        android:layout_height="30dip"
+                        android:layout_weight="0.2"
+                        android:src="@drawable/share" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/LinearLayout30"
+                android:layout_width="match_parent"
+                android:layout_height="50dip"
+                android:layout_marginBottom="2dip"
+                android:background="#272727"
+                android:gravity="center"
+                android:orientation="vertical" android:visibility="visible">
+
+                <LinearLayout
+                    android:id="@+id/LinearLayout31"
+                    android:layout_width="match_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_margin="8dip"
+                    android:gravity="right|center"
+                    android:orientation="horizontal" >
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

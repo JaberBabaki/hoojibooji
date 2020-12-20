@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal" >
+
+    <LinearLayout
+        android:id="@+id/lay_main_dis"
+        android:layout_width="0dip"
+        android:layout_height="210dip"
+        android:layout_marginBottom="2dip"
+        android:layout_marginLeft="2dip"
+        android:layout_marginRight="2dip"
+        android:layout_marginTop="2dip"
+        android:layout_weight="0.5"
+        android:background="@drawable/shape"
+        android:orientation="vertical" >
+
+         <com.android.volley.toolbox.NetworkImageView
+            android:id="@+id/img_baker"
+            android:layout_width="fill_parent"
+            android:layout_height="0dip" android:layout_weight="0.6" android:scaleType="fitXY" android:layout_margin="4dip"/>
+
+        <LinearLayout
+            android:id="@+id/lin_name"
+            android:layout_width="fill_parent"
+            android:layout_height="0dip"
+            android:layout_weight="0.4"
+            android:background="#ffffff"
+            android:orientation="vertical" android:layout_marginRight="4dip" android:layout_marginLeft="4dip" android:layout_marginTop="4dip" android:layout_marginBottom="4dip">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="0dip"
+                android:layout_weight="0.5"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:layout_width="0dip"
+                    android:layout_height="fill_parent"
+                    android:layout_marginBottom="4dip"
+                    android:layout_marginLeft="2dip"
+                    android:layout_marginRight="4dip"
+                    android:layout_marginTop="4dip"
+                    android:layout_weight="0.5"
+                    android:gravity="right|center" >
+
+                    <com.futuredeveloper.android.shopfinder.customcontrol.NewControlTextView
+                        android:id="@+id/txt_price_tiles"
+                        android:layout_width="0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.6"
+                        android:gravity="left|right|center"
+                        android:text="---"
+                        android:textColor="#00c853"
+                        android:textSize="11dip" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dip"
+                    android:layout_height="fill_parent"
+                    android:layout_marginBottom="4dip"
+                    android:layout_marginLeft="2dip"
+                    android:layout_marginRight="4dip"
+                    android:layout_marginTop="4dip"
+                    android:layout_weight="0.7"
+                    android:gravity="center" >
+
+                    <com.futuredeveloper.android.shopfinder.customcontrol.NewControlTextView
+                        android:id="@+id/txt_name_tiles"
+                        android:layout_width="0dip"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="0.6"
+                        android:gravity="right|center"
+                        android:text="---"
+                        android:textColor="#291515"
+                        android:textSize="11dip" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="0dip"
+                android:layout_weight="0.5"
+                android:orientation="vertical" android:layout_margin="4dip">
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="0dip"
+                    android:layout_marginBottom="4dip"
+                    android:layout_marginLeft="2dip"
+                    android:layout_marginRight="4dip"
+                    android:layout_marginTop="4dip"
+                    android:layout_weight="0.5"
+                    android:background="#F5F5F5"
+                    android:gravity="center" >
+
+                    <com.futuredeveloper.android.shopfinder.customcontrol.NewControlTextView
+                        android:id="@+id/txt_category_tiles"
+                        android:layout_width="0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.8"
+                        android:gravity="right|center"
+                        android:text="---"
+                        android:textColor="#291515"
+                        android:textSize="11dip" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
