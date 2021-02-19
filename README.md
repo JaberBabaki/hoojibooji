@@ -12,7 +12,6 @@ Startup members:
 
 last version applicatin [cafebazaar](https://cafebazaar.ir/app/com.milad.hoojibooji.hoojiboojifinall)
 
-# picture
  <table style="width:100%">
  <tr>
     <td><img src="https://github.com/JaberBabaki/hoojibooji/blob/master/pic/1-1.jpg" width="250" height="400" /></td>
